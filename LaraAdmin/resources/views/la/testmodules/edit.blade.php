@@ -5,8 +5,7 @@
 @endsection
 @section("contentheader_description", $testmodule->$view_col)
 @section("section", "Testmodules")
-{{$testmodule->$view_col}}
-{{die()}}
+
 @section("section_url", url(config('laraadmin.adminRoute') . '/testmodules'))
 @section("sub_section", "Edit")
 
