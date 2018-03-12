@@ -142,7 +142,6 @@ class TestmodulesController extends Controller
 				
 				$module->row = $testmodule;
 
-                var_dump($testmodule->view_col); die;
 
 				return view('la.testmodules.edit', [
 					'module' => $module,
