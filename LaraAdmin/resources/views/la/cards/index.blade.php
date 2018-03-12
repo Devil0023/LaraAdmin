@@ -31,6 +31,7 @@
 		<thead>
 		<tr class="success">
 			@foreach( $listing_cols as $col )
+				{{$module->fields[$col]['label']}}
 			<th>{{ $module->fields[$col]['label'] or ucfirst($col) }}</th>
 			@endforeach
 			@if($show_actions)
@@ -66,7 +67,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				{!! Form::submit( 'Submit', ['class'=>'btn btn-success']) !!} 111111111111111111
+				{!! Form::submit( 'Submit', ['class'=>'btn btn-success']) !!}
 			</div>
 			{!! Form::close() !!}
 		</div>
