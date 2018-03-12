@@ -141,7 +141,7 @@ class TestmodulesController extends Controller
 				$module = Module::get('Testmodules');
 				
 				$module->row = $testmodule;
-                var_dump($this->view_col); die;
+
 				return view('la.testmodules.edit', [
 					'module' => $module,
 					'view_col' => $this->view_col,
