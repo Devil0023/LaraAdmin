@@ -31,7 +31,6 @@
 		<thead>
 		<tr class="success">
 			@foreach( $listing_cols as $col )
-				{{var_dump($col)}}
 			<th>{{ $module->fields[$col]['label'] or ucfirst($col) }}</th>
 			@endforeach
 			@if($show_actions)
@@ -40,7 +39,7 @@
 		</tr>
 		</thead>
 		<tbody>
-			
+			{{var_dump(123)}}
 		</tbody>
 		</table>
 	</div>
