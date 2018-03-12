@@ -229,7 +229,7 @@ class CardsController extends Controller
 				if($col === "img"){
 				    $upload  = Upload::find($data->data[$i][$j]);
 				    if($upload->id){
-                        $data->data[$i][$j] = $_SERVER['DOCUMENT_ROOT']."---".$upload->path;
+                        $data->data[$i][$j] = "/file/".$upload->hash."/".$upload->name;
                     }else{
                         $data->data[$i][$j] = "文件丢失";
                     }
