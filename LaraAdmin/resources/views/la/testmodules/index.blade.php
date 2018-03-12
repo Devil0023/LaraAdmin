@@ -39,7 +39,7 @@
 		</tr>
 		</thead>
 		<tbody>
-			111111111111111111111111111
+
 		</tbody>
 		</table>
 	</div>
@@ -56,6 +56,7 @@
 			{!! Form::open(['action' => 'LA\TestmodulesController@store', 'id' => 'testmodule-add-form']) !!}
 			<div class="modal-body">
 				<div class="box-body">
+					1111
                     @la_form($module)
 					
 					{{--
