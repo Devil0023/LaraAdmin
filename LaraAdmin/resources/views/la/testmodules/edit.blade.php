@@ -3,6 +3,13 @@
 @section("contentheader_title")
 	<a href="{{ url(config('laraadmin.adminRoute') . '/testmodules') }}">Testmodule</a> :
 @endsection
+
+{{$testmodule->$view_col}}
+
+{{1111}}
+
+{{die}}
+
 @section("contentheader_description", $testmodule->$view_col)
 @section("section", "Testmodules")
 
