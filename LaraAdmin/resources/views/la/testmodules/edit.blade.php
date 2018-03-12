@@ -21,7 +21,7 @@
         </ul>
     </div>
 @endif
-
+{{die()}}
 <div class="box">
 	<div class="box-header">
 		
