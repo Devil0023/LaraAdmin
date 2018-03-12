@@ -222,7 +222,7 @@ class CardsController extends Controller
 
 				    if($col === "img"){
 
-                        $data->data[$i][$j] = "img-".$data->data[$i][$j];
+                        var_dump($data->data[$i][$j]); die;
 
                     }else{
                         $data->data[$i][$j] = ModuleFields::getFieldValue($fields_popup[$col], $data->data[$i][$j]);
