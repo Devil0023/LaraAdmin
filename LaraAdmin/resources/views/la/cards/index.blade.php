@@ -57,7 +57,7 @@
 			<div class="modal-body">
 				<div class="box-body">
                     @la_form($module)
-					
+					@la_input($module, 'name')
 					{{--
 					@la_input($module, 'name')
 					@la_input($module, 'img')
