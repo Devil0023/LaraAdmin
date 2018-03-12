@@ -78,4 +78,8 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Testmodules ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/testmodules', 'LA\TestmodulesController');
 	Route::get(config('laraadmin.adminRoute') . '/testmodule_dt_ajax', 'LA\TestmodulesController@dtajax');
+
+	/* ================== Cards ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/cards', 'LA\CardsController');
+	Route::get(config('laraadmin.adminRoute') . '/card_dt_ajax', 'LA\CardsController@dtajax');
 });
