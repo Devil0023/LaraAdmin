@@ -219,7 +219,11 @@ class CardsController extends Controller
 			for ($j=0; $j < count($this->listing_cols); $j++) { 
 				$col = $this->listing_cols[$j];
 				if($fields_popup[$col] != null && starts_with($fields_popup[$col]->popup_vals, "@")) {
-					$data->data[$i][$j] = ModuleFields::getFieldValue($fields_popup[$col], $data->data[$i][$j]);
+				    if($col === "img"){
+                        $data->data[$i][$j] = "yes".ModuleFields::getFieldValue($fields_popup[$col], $data->data[$i][$j]);
+                    }else{
+                        $data->data[$i][$j] = ModuleFields::getFieldValue($fields_popup[$col], $data->data[$i][$j]);
+                    }
 				}
 				if($col == $this->view_col) {
 					$data->data[$i][$j] = '<a href="'.url(config('laraadmin.adminRoute') . '/cards/'.$data->data[$i][0]).'">'.$data->data[$i][$j].'</a>';
