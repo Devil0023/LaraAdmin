@@ -4,21 +4,14 @@
 	<a href="{{ url(config('laraadmin.adminRoute') . '/testmodules') }}">Testmodule</a> :
 @endsection
 
-{{3333}}
-{{$testmodule->$view_col}}
-{{1111111111}}
-{{die(1)}}
 
-@section("contentheader_description", $testmodule->$view_col)
-
-{{222222}}
-{{die(2)}}
+{{--@section("contentheader_description", $testmodule->$view_col)--}}
 
 @section("section", "Testmodules")
 @section("section_url", url(config('laraadmin.adminRoute') . '/testmodules'))
 @section("sub_section", "Edit")
 
-@section("htmlheader_title", "Testmodules Edit : ".$testmodule->$view_col)
+{{--@section("htmlheader_title", "Testmodules Edit : ".$testmodule->$view_col)--}}
 
 @section("main-content")
 
