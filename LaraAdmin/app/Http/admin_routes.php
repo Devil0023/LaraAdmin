@@ -70,4 +70,12 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	Route::get(config('laraadmin.adminRoute') . '/backup_dt_ajax', 'LA\BackupsController@dtajax');
 	Route::post(config('laraadmin.adminRoute') . '/create_backup_ajax', 'LA\BackupsController@create_backup_ajax');
 	Route::get(config('laraadmin.adminRoute') . '/downloadBackup/{id}', 'LA\BackupsController@downloadBackup');
+
+	/* ================== Testmodules ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/testmodules', 'LA\TestmodulesController');
+	Route::get(config('laraadmin.adminRoute') . '/testmodule_dt_ajax', 'LA\TestmodulesController@dtajax');
+
+	/* ================== Testmodules ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/testmodules', 'LA\TestmodulesController');
+	Route::get(config('laraadmin.adminRoute') . '/testmodule_dt_ajax', 'LA\TestmodulesController@dtajax');
 });
