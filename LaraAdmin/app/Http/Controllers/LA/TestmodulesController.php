@@ -136,7 +136,7 @@ class TestmodulesController extends Controller
 	{
 		if(Module::hasAccess("Testmodules", "edit")) {			
 			$testmodule = Testmodule::find($id);
-			var_dump($testmodule->name); die;
+
 			if(isset($testmodule->id)) {	
 				$module = Module::get('Testmodules');
 				
