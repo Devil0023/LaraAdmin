@@ -7,6 +7,7 @@
 namespace App\Http\Controllers\LA;
 
 use App\Http\Controllers\Controller;
+use App\Models\Upload;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Auth;
@@ -226,7 +227,13 @@ class CardsController extends Controller
 				}
 
 				if($col === "img"){
-                    $data->data[$i][$j] = "img---".$data->data[$i][$j];
+				    $upload  = Upload::find($data->data[$i][$j]);
+				    if($upload->id){
+                        $data->data[$i][$j] = $upload->path;
+                    }else{
+                        $data->data[$i][$j] = "文件丢失";
+                    }
+
                 }
 
 				// else if($col == "author") {
