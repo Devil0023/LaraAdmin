@@ -3,6 +3,7 @@
 @section("contentheader_title")
 	<a href="{{ url(config('laraadmin.adminRoute') . '/testmodules') }}">Testmodule</a> :
 @endsection
+{{die()}}
 @section("contentheader_description", $testmodule->$view_col)
 @section("section", "Testmodules")
 @section("section_url", url(config('laraadmin.adminRoute') . '/testmodules'))
@@ -21,7 +22,7 @@
         </ul>
     </div>
 @endif
-{{die()}}
+
 <div class="box">
 	<div class="box-header">
 		
