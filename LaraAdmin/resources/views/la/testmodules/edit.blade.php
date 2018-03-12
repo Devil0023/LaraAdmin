@@ -1,18 +1,14 @@
 @extends("la.layouts.app")
 
+{{count($errors)}}
+
+{{die(1)}}
+
 @section("contentheader_title")
 	<a href="{{ url(config('laraadmin.adminRoute') . '/testmodules') }}">Testmodule</a> :
 @endsection
-
-{{$testmodule->$view_col}}
-
-{{1111}}
-
-{{die}}
-
 @section("contentheader_description", $testmodule->$view_col)
 @section("section", "Testmodules")
-
 @section("section_url", url(config('laraadmin.adminRoute') . '/testmodules'))
 @section("sub_section", "Edit")
 
@@ -32,14 +28,14 @@
 
 <div class="box">
 	<div class="box-header">
-		
+
 	</div>
 	<div class="box-body">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				{!! Form::model($testmodule, ['route' => [config('laraadmin.adminRoute') . '.testmodules.update', $testmodule->id ], 'method'=>'PUT', 'id' => 'testmodule-edit-form']) !!}
 					@la_form($module)
-					
+
 					{{--
 					@la_input($module, 'name')
 					@la_input($module, 'address')
@@ -61,7 +57,7 @@
 <script>
 $(function () {
 	$("#testmodule-edit-form").validate({
-		
+
 	});
 });
 </script>
