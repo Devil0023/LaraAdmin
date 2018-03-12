@@ -56,7 +56,7 @@
 			{!! Form::open(['action' => 'LA\CardsController@store', 'id' => 'card-add-form']) !!}
 			<div class="modal-body">
 				<div class="box-body">
-                    @la_form($module)
+                    {{--@la_form($module)--}}
 					@la_input($module, 'name')
 					{{--
 					@la_input($module, 'name')
