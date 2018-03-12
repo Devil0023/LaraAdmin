@@ -12,8 +12,7 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    return view("errors.503");
+    return view('welcome');
 });
 
 /* ================== Homepage + Admin Routes ================== */
