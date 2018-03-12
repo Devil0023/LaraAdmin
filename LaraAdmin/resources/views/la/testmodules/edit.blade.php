@@ -1,12 +1,13 @@
 @extends("la.layouts.app")
 
-{{count($errors)}}
-
-{{die(1)}}
-
 @section("contentheader_title")
 	<a href="{{ url(config('laraadmin.adminRoute') . '/testmodules') }}">Testmodule</a> :
 @endsection
+
+{{1111111111}}
+
+{{die(1)}}
+
 @section("contentheader_description", $testmodule->$view_col)
 @section("section", "Testmodules")
 @section("section_url", url(config('laraadmin.adminRoute') . '/testmodules'))
