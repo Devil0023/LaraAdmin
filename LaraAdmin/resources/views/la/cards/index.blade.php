@@ -56,8 +56,8 @@
 			{!! Form::open(['action' => 'LA\CardsController@store', 'id' => 'card-add-form']) !!}
 			<div class="modal-body">
 				<div class="box-body">
-                    {{--@la_form($module)--}}
-					@la_input($module, 'name')
+                    @la_form($module)
+
 					{{--
 					@la_input($module, 'name')
 					@la_input($module, 'img')
@@ -66,7 +66,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				{!! Form::submit( 'Submit', ['class'=>'btn btn-success']) !!}
+				{!! Form::submit( 'Submit', ['class'=>'btn btn-success']) !!} 111111111111111111
 			</div>
 			{!! Form::close() !!}
 		</div>
