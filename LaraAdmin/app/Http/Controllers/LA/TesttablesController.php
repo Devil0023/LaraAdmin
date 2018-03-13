@@ -76,7 +76,10 @@ class TesttablesController extends Controller
 	public function store(Request $request)
 	{
 		if(Module::hasAccess("Testtables", "create")) {
-		
+
+
+		    var_dump($request); die;
+
 			$rules = Module::validateRules("Testtables", $request);
 			
 			$validator = Validator::make($request->all(), $rules);
