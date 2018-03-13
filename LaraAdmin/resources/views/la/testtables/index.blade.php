@@ -56,8 +56,9 @@
 			{!! Form::open(['action' => 'LA\TesttablesController@store', 'id' => 'testtable-add-form']) !!}
 			<div class="modal-body">
 				<div class="box-body">
-                    @la_form($module)
-					
+                    {{--@la_form($module)--}}
+					@la_input($module, 'name')
+					@la_input($module, 'address')
 					{{--
 					@la_input($module, 'name')
 					@la_input($module, 'address')
