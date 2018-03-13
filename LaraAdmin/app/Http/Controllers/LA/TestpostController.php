@@ -62,9 +62,12 @@ class TestpostController extends Controller
 
     public function postdatapost(Request $request){
 
-        var_dump($request->name);
-        var_dump($request->address);
+        $info = Testtable::create(array(
+            "name" => $request->name,
+            "address" => $request->address,
+        ));
 
+        var_dump($info);
     }
 
 }
