@@ -94,6 +94,7 @@ $(function () {
 			search: "_INPUT_",
 			searchPlaceholder: "Search"
 		},
+        aLengthMenu: 15,
 		@if($show_actions)
 		columnDefs: [ { orderable: false, targets: [-1] }],
 		@endif
