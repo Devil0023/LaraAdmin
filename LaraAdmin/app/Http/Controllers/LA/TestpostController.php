@@ -8,12 +8,10 @@ namespace App\Http\Controllers\LA;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use Auth;
 use DB;
 use Validator;
 use Datatables;
-use Collective\Html\FormFacade as Form;
 use Dwij\Laraadmin\Models\Module;
 use Dwij\Laraadmin\Models\ModuleFields;
 
@@ -56,11 +54,9 @@ class TestpostController extends Controller
     }
 
     public function postdata(){
-        $value = 1;
         $module = Module::get('Testmodules');
         return View('la.testpost.index', [
-            'module' => $module,
-            "value" => $value
+            'module' => $module
         ]);
     }
 
