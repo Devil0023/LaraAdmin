@@ -9,7 +9,8 @@
             {!! Form::open(['action' => 'LA\TestpostController@postdatapost', 'id' => 'testmodule-add-form']) !!}
             <div class="modal-body">
                 <div class="box-body">
-                    @la_form($module)
+                    {{$value}}
+                    {{--@la_form($module)--}}
 
                     {{--
                     @la_input($module, 'name')

@@ -56,9 +56,11 @@ class TestpostController extends Controller
     }
 
     public function postdata(){
+        $value = 1;
         $module = Module::get('Testmodules');
         return View('la.testpost.index', [
-            'module' => $module
+            'module' => $module,
+            "value" => $value
         ]);
     }
 
