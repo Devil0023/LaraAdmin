@@ -45,6 +45,7 @@ class TesttablesController extends Controller
 	public function index()
 	{
 		$module = Module::get('Testtables');
+		var_dump($module); die;
 		
 		if(Module::hasAccess($module->id)) {
 			return View('la.testtables.index', [
