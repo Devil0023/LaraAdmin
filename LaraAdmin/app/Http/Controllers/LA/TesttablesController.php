@@ -212,9 +212,7 @@ class TesttablesController extends Controller
 		$values = DB::table('testtables')->select($this->listing_cols)->whereNull('deleted_at');
 		$out = Datatables::of($values)->make();
 		$data = $out->getData();
-
-		var_dump($data); die;
-
+        
 		$fields_popup = ModuleFields::getModuleFields('Testtables');
 		
 		for($i=0; $i < count($data->data); $i++) {
