@@ -210,7 +210,6 @@ class TesttablesController extends Controller
 	public function dtajax()
 	{
 		$values = DB::table('testtables')->select($this->listing_cols)->whereNull('deleted_at');
-		var_dump($values); die;
 		$out = Datatables::of($values)->make();
 		$data = $out->getData();
 
