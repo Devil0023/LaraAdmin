@@ -1,3 +1,4 @@
+@extends("la.layouts.app")
 <div class="modal fade" id="AddModal" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -5,10 +6,10 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Add Testmodule</h4>
             </div>
-            {!! Form::open(['action' => 'LA\TestpostController@postdata', 'id' => 'testmodule-add-form']) !!}
+            {!! Form::open(['action' => 'LA\TestpostController@postdatapost', 'id' => 'testmodule-add-form']) !!}
             <div class="modal-body">
                 <div class="box-body">
-                    {{--@la_form($module)--}}
+                    @la_form($module)
 
                     {{--
                     @la_input($module, 'name')
