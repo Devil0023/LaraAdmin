@@ -209,7 +209,7 @@ class TesttablesController extends Controller
 	 */
 	public function dtajax()
 	{
-		$values = DB::table('testtables')->select($this->listing_cols)->whereNull('deleted_at')->paginate(20);
+		$values = DB::table('testtables')->select($this->listing_cols)->whereNull('deleted_at');
 		$out = Datatables::of($values)->make();
 		$data = $out->getData();
 
