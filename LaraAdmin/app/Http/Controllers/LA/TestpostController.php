@@ -15,7 +15,7 @@ use Datatables;
 use Dwij\Laraadmin\Models\Module;
 use Dwij\Laraadmin\Models\ModuleFields;
 
-use App\Models\Testmodule;
+use App\Models\Testtable;
 
 class TestpostController extends Controller
 {
@@ -54,8 +54,7 @@ class TestpostController extends Controller
     }
 
     public function postdata(){
-        $module = Module::get('Testmodules');
-        var_dump($module); die;
+        $module = Module::get('Testtables');
         return View('la.testpost.index', [
             'module' => $module
         ]);
