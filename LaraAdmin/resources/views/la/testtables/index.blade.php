@@ -94,8 +94,8 @@ $(function () {
 			search: "_INPUT_",
 			searchPlaceholder: "Search"
 		},
-		order: [[1, "desc"]],
-		
+		order: [[0, "desc"]],
+
 		@if($show_actions)
 		columnDefs: [ { orderable: false, targets: [-1] }],
 		@endif
