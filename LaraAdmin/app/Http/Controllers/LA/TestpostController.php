@@ -60,8 +60,11 @@ class TestpostController extends Controller
         ]);
     }
 
-    public function postdatapost(){
-        echo "Hello2";
+    public function postdatapost(Request $request){
+
+        var_dump($request->name);
+        var_dump($request->address);
+
     }
 
 }
