@@ -209,10 +209,10 @@ class TesttablesController extends Controller
 	 */
 	public function dtajax()
 	{
-		$values = DB::table('testtables')->select($this->listing_cols)->whereNull('deleted_at');
+		$values = DB::table('testtables')->select($this->listing_cols)->whereNull('deleted_at')->paginate(20);
 		$out = Datatables::of($values)->make();
 		$data = $out->getData();
-        
+
 		$fields_popup = ModuleFields::getModuleFields('Testtables');
 		
 		for($i=0; $i < count($data->data); $i++) {
