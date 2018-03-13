@@ -57,8 +57,8 @@
 			<div class="modal-body">
 				<div class="box-body">
                     {{--@la_form($module)--}}
-					@la_input($module, 'name')
-					@la_input($module, 'address')
+					@la_input($module, 'name', '123123123')
+					@la_input($module, 'address', '23423423324')
 					{{--
 					@la_input($module, 'name')
 					@la_input($module, 'address')
