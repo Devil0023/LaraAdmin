@@ -83,6 +83,6 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 
 
 	//TEST POST
-    Route::get("laraadmin.adminRoute". "/testtables/postdata", 'LA\TesttablesController@postdata');
-    Route::post("laraadmin.adminRoute". "/testtables/postdatapost", 'LA\TesttablesController@postdatapost');
+    Route::get("laraadmin.adminRoute". "/testpost/postdata", 'LA\TestpostController@postdata');
+    Route::post("laraadmin.adminRoute". "/testpost/postdatapost", 'LA\TestpostController@postdatapost');
 });

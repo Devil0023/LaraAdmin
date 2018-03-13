@@ -247,12 +247,4 @@ class TesttablesController extends Controller
 		return $out;
 	}
 
-	public function postdata(){
-	    echo "hello";
-    }
-
-    public function postdatapost(Request $request){
-	    echo "hello again";
-	    var_dump($request->name);
-    }
 }
