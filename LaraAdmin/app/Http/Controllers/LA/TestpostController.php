@@ -55,6 +55,7 @@ class TestpostController extends Controller
 
     public function postdata(){
         $module = Module::get('Testmodules');
+        var_dump($module); die;
         return View('la.testpost.index', [
             'module' => $module
         ]);
