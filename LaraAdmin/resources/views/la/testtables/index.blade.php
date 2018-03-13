@@ -90,11 +90,12 @@ $(function () {
         serverSide: true,
         ajax: "{{ url(config('laraadmin.adminRoute') . '/testtable_dt_ajax') }}",
 		language: {
-			//lengthMenu: "_MENU_",
-            lengthMenu: "15",
+			lengthMenu: "_MENU_",
 			search: "_INPUT_",
 			searchPlaceholder: "Search"
 		},
+		order: [[1, "desc"]],
+		
 		@if($show_actions)
 		columnDefs: [ { orderable: false, targets: [-1] }],
 		@endif
