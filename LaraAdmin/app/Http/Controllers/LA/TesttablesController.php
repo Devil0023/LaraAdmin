@@ -246,4 +246,13 @@ class TesttablesController extends Controller
 		$out->setData($data);
 		return $out;
 	}
+
+	public function postdata(){
+	    echo "hello";
+    }
+
+    public function postdatapost(Request $request){
+	    echo "hello again";
+	    var_dump($request->name);
+    }
 }

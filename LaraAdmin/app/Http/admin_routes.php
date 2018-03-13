@@ -80,4 +80,9 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Testtables ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/testtables', 'LA\TesttablesController');
 	Route::get(config('laraadmin.adminRoute') . '/testtable_dt_ajax', 'LA\TesttablesController@dtajax');
+
+
+	//TEST POST
+    Route::get("laraadmin.adminRoute". "/testtables/postdata", 'LA\TesttablesController@postdata');
+    Route::get("laraadmin.adminRoute". "/testtables/postdatapost", 'LA\TesttablesController@postdatapost');
 });
