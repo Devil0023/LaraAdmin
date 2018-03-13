@@ -95,7 +95,7 @@ $(function () {
 			searchPlaceholder: "Search"
 		},
 		order: [[0, "desc"]],
-        lengthMenu: [ 5, 25, 50, 75],
+        lengthMenu: [ 25, 50, 75],
 
 		@if($show_actions)
 		columnDefs: [ { orderable: false, targets: [-1] }],
