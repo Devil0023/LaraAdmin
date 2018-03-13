@@ -90,7 +90,8 @@ $(function () {
         serverSide: true,
         ajax: "{{ url(config('laraadmin.adminRoute') . '/testtable_dt_ajax') }}",
 		language: {
-			lengthMenu: "_MENU_",
+			//lengthMenu: "_MENU_",
+			lengthMenu:[[5, 25, 50, -1]],
 			search: "_INPUT_",
 			searchPlaceholder: "Search"
 		},
