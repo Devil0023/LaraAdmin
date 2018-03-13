@@ -213,6 +213,9 @@ class TesttablesController extends Controller
 		$out = Datatables::of($values)->make();
 		$data = $out->getData();
 
+		var_dump($data->recordsTotal);
+        die;
+
 		$fields_popup = ModuleFields::getModuleFields('Testtables');
 		
 		for($i=0; $i < count($data->data); $i++) {
