@@ -10,8 +10,10 @@
             <div class="modal-body">
                 <div class="box-body">
 
-                    @la_form($module)
-
+                    {{--@la_form($module)--}}
+                    <input type="text" name="name" value="Tom">
+                    <input type="text" name="address" value="Shanghai">
+                    <input type="submit" name="submit" value="submit">
                     {{--
                     @la_input($module, 'name')
                     @la_input($module, 'address')
