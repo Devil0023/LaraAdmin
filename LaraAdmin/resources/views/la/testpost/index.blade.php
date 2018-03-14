@@ -2,8 +2,8 @@
 
         {{--@la_form($module)--}}
 
-{!! Form::text('name', ["class" => "self"]) !!}
-{!! Form::text('address', ["class" => "self"]) !!}
+{!! Form::text('name', "Tom", ["class" => "self"]) !!}
+{!! Form::text('address', "Shanghai", ["class" => "self"]) !!}
         {{--
         @la_input($module, 'name')
         @la_input($module, 'address')
