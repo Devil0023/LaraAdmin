@@ -21,7 +21,7 @@ use App\User;
 
 class UsersController extends Controller
 {
-	public $show_action = false;
+	public $show_action = true;
 	public $view_col = 'name';
 	public $listing_cols = ['id', 'name', 'email', 'type'];
 	
