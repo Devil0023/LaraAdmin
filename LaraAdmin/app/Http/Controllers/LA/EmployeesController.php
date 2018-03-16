@@ -92,7 +92,7 @@ class EmployeesController extends Controller
 				return redirect()->back()->withErrors($validator)->withInput();
 			}
 			
-			// generate password
+			// generate password 初始化密码 默认abcd123456
 			$password = "abcd123456";//LAHelper::gen_password();
 			
 			// Create Employee

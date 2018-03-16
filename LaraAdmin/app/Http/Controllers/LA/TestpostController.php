@@ -68,6 +68,21 @@ class TestpostController extends Controller
         ));
 
         var_dump($info);
+
+//        DB::beginTransaction();
+//        $orderInfo = TicketOrder::where('id', 11482)
+//            // ->where('user_order_id', $userOrderId)
+//            // ->where('state', 0)
+//            ->lockForUpdate()
+//            ->first();
+//        $orderInfo->state=1;
+//        $s = $orderInfo->save();
+//        var_dump($s);
+//        DB::commit();
+//        $orderInfo->state=2;
+//        $s = $orderInfo->save();
+//        var_dump($s);
+//        exit(json_encode($orderInfo));
     }
 
 }
